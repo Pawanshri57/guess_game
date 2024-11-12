@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Advanced Image Editor</h1>
+
+        <input type="file" id="upload" accept="Image/*"/>
+        <canvas id="canvas"></canvas>
+
+        <div class="controls">
+            <div class="subcontrol">
+                <h3>Filters</h3>
+
+                <label for="brightness">brightness</label>
+                <input type="range" id="brightness" min="0" max="200" value="100">
+
+                <label for="Contrast">Contrast</label>
+                <input type="range" id="Contrast" min="0" max="200" value="100">
+
+                <label for="Saturation">Saturation</label>
+                <input type="range" id="Saturation" min="0" max="200" value="100">
+
+            </div>
+
+            <div class="subcontrol">
+                <h3>crop</h3>
+                <button id="crop-btn">Start Crop</button>
+                <button id="apply-crop-btn">Apply Crop</button>
+
+                <button id="FlipHorizontal">Flip Horizontal</button>
+                <button id="FlipVertical">Flip Vertical</button>
+            </div>
+
+            <div class="subcontrol">
+                <h3>Transformations</h3>
+                
+                
+                <label for="">Rotate</label>
+                <input type="range" id="Rotate" min="0" max="360" value="0">
+
+                <label for="">Scale</label>
+                <input type="range" id="Scale" min="50" max="150" value="100">
+
+
+
+            </div>
+
+           
+        </div>
+        <button id="download-btn">Download Edited Image</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
